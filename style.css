@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo Animado */
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(270deg, #1db954, #191414, #535353, #121212);
+  background-size: 800% 800%;
+  animation: moveBackground 20s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animação do Fundo */
+@keyframes moveBackground {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Cartão de Login */
+.login-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  width: 350px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Título */
+.login-container h1 {
+  margin-bottom: 30px;
+  color: #1db954;
+}
+
+/* Inputs */
+.login-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #222;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.login-container input:focus {
+  outline: none;
+  background-color: #333;
+}
+
+/* Botão Login */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1db954;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #17a64a;
+}
+
+/* Social Login */
+.social-login {
+  margin-top: 20px;
+}
+
+.social-login button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.social-login button:hover {
+  background-color: #444;
+}
+
+/* Divisor */
+.divider {
+  margin: 15px 0;
+  color: #999;
+  font-size: 14px;
+}
+
+/* Texto extra */
+.login-container p {
+  color: #aaa;
+  font-size: 12px;
+}
